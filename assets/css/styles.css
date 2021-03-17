@@ -1,0 +1,76 @@
+body {
+    background-color: whitesmoke;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #5d5d5d;
+}
+
+nav a {
+    font-size: 1.5em;
+    color: rgb(247, 230, 230);
+    margin: 20px;
+}
+
+#heroImage {
+    overflow: hidden;
+    height: 200px;
+}
+
+#heroImage img {
+    max-width: 100%;
+}
+
+.mainContent {
+    display: flex;
+    flex: 1 0 400px;
+}
+
+.mainContent p {
+    display: flex;
+    font-size: 1.5em;
+    align-items: center;
+    min-width: 60px;
+}
+
+.contentLine {
+    border-left: 6px solid rgb(37, 49, 68);
+    max-height: 100%;
+    margin: 10px;
+}
+
+#aboutMeText p {
+    align-items: flex-start;
+    font-size: 1em;
+}
+
+#mainProject {
+    overflow: hidden;
+    height: 200px;
+    margin: 0 0 10px;
+}
+
+#mainProject img {
+    max-width: 100%;
+}
+
+#otherProjects {
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+    overflow: hidden;
+}
+
+#otherProjects img {
+    display: flex;
+    max-width: 50%;
+}
+
+#otherProject1 {
+    justify-content: flex-start;
+}
+
+#otherProject2 {
+    justify-content: flex-end;
+}
