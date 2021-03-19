@@ -16,22 +16,24 @@ nav a {
 #heroImage {
     overflow: hidden;
     height: 200px;
+    display: flex;
 }
 
 #heroImage img {
-    max-width: 100%;
+    width: 100%;
 }
 
 .mainContent {
     display: flex;
-    flex: 1 0 400px;
+    width: 100%;
 }
 
-.mainContent p {
+.mainContent > p {
     display: flex;
     font-size: 1.5em;
     align-items: center;
-    min-width: 60px;
+    min-width: 100px;
+    padding: 60px;
 }
 
 .contentLine {
@@ -40,31 +42,52 @@ nav a {
     margin: 10px;
 }
 
+.workImages {
+    position: relative;
+}
+
+.mainImageText {
+    position: absolute;
+    color: white;
+    font-size: 3em;
+    margin: 10px;
+    left: 10px;
+}
+
+.workImages .otherProject {
+    width: 50%;
+}
+
+.otherImageText {
+    position: absolute;
+    color: white;
+    font-size: 3em;
+    margin: 10px;
+    left: 10px;
+}
+
 #aboutMeText p {
     align-items: flex-start;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 #mainProject {
     overflow: hidden;
-    height: 200px;
     margin: 0 0 10px;
 }
 
 #mainProject img {
-    max-width: 100%;
+    width: 100%;
+    float: right;
 }
 
 #otherProjects {
     display: flex;
     flex-wrap: wrap;
-    height: 200px;
-    overflow: hidden;
 }
 
 #otherProjects img {
-    display: flex;
-    max-width: 50%;
+    max-width: 100%;
 }
 
 #otherProject1 {
@@ -73,4 +96,10 @@ nav a {
 
 #otherProject2 {
     justify-content: flex-end;
+}
+
+@media only screen and (max-width: 1000px) {
+    .workImages .otherProject {
+        width: 100%;
+    }
 }
