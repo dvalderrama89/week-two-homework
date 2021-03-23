@@ -26,20 +26,21 @@ nav a {
 .mainContent {
     display: flex;
     width: 100%;
+    margin: 10px 0;
 }
 
 .mainContent > p {
     display: flex;
     font-size: 1.5em;
     align-items: center;
-    min-width: 100px;
+    min-width: 120px;
     padding: 60px;
 }
 
 .contentLine {
     border-left: 6px solid rgb(37, 49, 68);
     max-height: 100%;
-    margin: 10px;
+    margin: 0 10px;
 }
 
 .workImages {
@@ -56,6 +57,9 @@ nav a {
 
 .workImages .otherProject {
     width: 50%;
+    height: 200px;
+    overflow: hidden;
+    flex: 1 0 300px;
 }
 
 .otherImageText {
@@ -78,7 +82,7 @@ nav a {
 
 #mainProject img {
     width: 100%;
-    float: right;
+    height: 400px;
 }
 
 #otherProjects {
@@ -90,7 +94,11 @@ nav a {
     max-width: 100%;
 }
 
-#otherProject1 {
+#otherProjectContainer1 {
+    margin: 0 10px 0 0;
+}
+
+#otherProjectImage1 {
     justify-content: flex-start;
 }
 
@@ -98,8 +106,19 @@ nav a {
     justify-content: flex-end;
 }
 
+#ContactMeText {
+    font-size: 1.5em;
+    color: #0a0fff;
+    margin: 20px;
+}
+
 @media only screen and (max-width: 1000px) {
     .workImages .otherProject {
         width: 100%;
+        flex: none;
+    }
+
+    #otherProjectContainer1 {
+        margin: 0 0 10px 0;
     }
 }
