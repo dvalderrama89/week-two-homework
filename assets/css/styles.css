@@ -1,15 +1,36 @@
 body {
-    background-color: whitesmoke;
+    background-color: #383e43;
 }
+
+h1 {
+    position: absolute;
+    left: 20px;
+    top: 2px;
+    color: rgb(250, 243, 243);
+}
+
+span {
+    color:rgb(250, 243, 243);
+}
+
+p {
+    color: rgb(250, 243, 243);
+}
+
+section > p {
+    justify-content: center;
+    box-shadow: 4px 6px 3px rgba(0,0,0,.5);
+}
+
 nav {
     display: flex;
     justify-content: flex-end;
-    background-color: #5d5d5d;
+    background-color: #404a53;
 }
 
 nav a {
     font-size: 1.5em;
-    color: rgb(247, 230, 230);
+    color: rgb(250, 243, 243);
     margin: 20px;
 }
 
@@ -23,6 +44,14 @@ nav a {
     width: 100%;
 }
 
+#heroImage span {
+    color: rgb(250, 243, 243);
+    font-size: 50px;
+    position: absolute;
+    right: 110px;
+    top: 180px;
+}
+
 .mainContent {
     display: flex;
     width: 100%;
@@ -31,10 +60,11 @@ nav a {
 
 .mainContent > p {
     display: flex;
-    font-size: 1.5em;
+    font-size: 1.8em;
     align-items: center;
-    min-width: 120px;
+    min-width: 140px;
     padding: 60px;
+    text-shadow: 1px 3px 1px black;
 }
 
 .contentLine {
@@ -70,14 +100,22 @@ nav a {
     left: 10px;
 }
 
+#aboutMeText {
+    border: 1px solid white;
+    margin: 1px;
+}
+
 #aboutMeText p {
     align-items: flex-start;
     font-size: 1.2em;
+    padding: 5px;
 }
 
 #mainProject {
     overflow: hidden;
     margin: 0 0 10px;
+    border: 1px solid white;
+    margin: 1px;
 }
 
 #mainProject img {
@@ -91,7 +129,8 @@ nav a {
 }
 
 #otherProjects img {
-    max-width: 100%;
+    width: 99.5%;
+    height: 190px;
 }
 
 #otherProjectContainer1 {
@@ -100,16 +139,26 @@ nav a {
 
 #otherProjectImage1 {
     justify-content: flex-start;
+    border: 1px solid white;
+    margin: 1px;
 }
 
 #otherProject2 {
     justify-content: flex-end;
+    border: 1px solid white;
+    margin: 1px;
 }
 
 #ContactMeText {
     font-size: 1.5em;
-    color: #0a0fff;
+    color: rgb(250, 243, 243);
+    width: 100%;
+    text-align: center;
     margin: 20px;
+}
+
+ul {
+    list-style-type: none;
 }
 
 @media only screen and (max-width: 1000px) {
